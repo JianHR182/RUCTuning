@@ -1,0 +1,6 @@
+[2023-10-12 17:38:18,799:tuner.py#L77:INFO]: 1697103478	random 1	{'wal_buffers': 8574, 'shared_buffers': 2255596, 'max_process_memory': 54579995, 'maintenance_work_mem': 47264928, 'work_mem': 13834342, 'effective_cache_size': 21061577, 'effective_io_concurrency': 602, 'temp_buffers': 6778637, 'vacuum_cost_limit': 8701, 'vacuum_cost_page_dirty': 6696, 'vacuum_cost_page_hit': 789, 'vacuum_cost_page_miss': 2185, 'backend_flush_after': 79}	tps = 311.0
+
+[2023-10-12 17:38:29,939:tuner.py#L77:INFO]: 1697103478	random 2	{'wal_buffers': 40744, 'shared_buffers': 556551, 'max_process_memory': 59816713, 'maintenance_work_mem': 15263907, 'work_mem': 39362771, 'effective_cache_size': 38157824, 'effective_io_concurrency': 60, 'temp_buffers': 4764679, 'vacuum_cost_limit': 4976, 'vacuum_cost_page_dirty': 1771, 'vacuum_cost_page_hit': 7473, 'vacuum_cost_page_miss': 5330, 'backend_flush_after': 238}	tps = 280.0
+
+[2023-10-12 17:38:41,691:tuner.py#L112:INFO]: 1697103478	suggest 1	{'wal_buffers': 33683, 'shared_buffers': 881978, 'max_process_memory': 54199912, 'maintenance_work_mem': 29490066, 'work_mem': 14464956, 'effective_cache_size': 35060832, 'effective_io_concurrency': 720, 'temp_buffers': 6397577, 'vacuum_cost_limit': 9830, 'vacuum_cost_page_dirty': 335, 'vacuum_cost_page_hit': 9945, 'vacuum_cost_page_miss': 8773, 'backend_flush_after': 19}	tps = 206.0
+

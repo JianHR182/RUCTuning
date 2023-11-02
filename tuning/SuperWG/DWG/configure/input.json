@@ -1,0 +1,146 @@
+{
+    "Table Schema": "noobschema",
+    "Tables": [
+      {
+        "Table Name": "tb11",
+        "Table Columns": [
+          {
+            "Column Name": "col1",
+            "Data Type": "float",
+            "Data Type Mod": 0,
+            "Data Distribution": [0,100]
+          },
+          {
+            "Column Name": "col2",
+            "Data Type": "int",
+            "Data Type Mod": 0,
+            "Data Distribution": [0,100]
+          }
+        ],
+        "Column Distribution" : [0.5, 0.5],
+        "Primary Key": {
+          "Name": "",
+          "Data Type": ""
+        },
+        "Foreign Key": [
+          {
+            "Foreign Key Name": "",
+            "Foreign Key Type": "",
+            "Referenced Table": "",
+            "Referenced Primary Key": "",
+            "Referenced Primary Key Type": ""
+          }
+        ]
+      },
+      {
+        "Table Name": "tb22",
+        "Table Columns": [
+          {
+            "Column Name": "col3",
+            "Data Type": "int",
+            "Data Type Mod": 0,
+            "Data Distribution": [0,100]
+          },
+          {
+            "Column Name": "co4",
+            "Data Type": "int",
+            "Data Type Mod": 0,
+            "Data Distribution": [0,100]
+          }
+
+        ],
+        "Column Distribution" : [0.5, 0.5],
+        "Primary Key": {
+          "Name": "",
+          "Data Type": ""
+        },
+        "Foreign Key": [
+          {
+            "Foreign Key Name": "",
+            "Foreign Key Type": "",
+            "Referenced Table": "",
+            "Referenced Primary Key": "",
+            "Referenced Primary Key Type": ""
+          }
+        ]
+      },
+      {
+        "Table Name": "tb33",
+        "Table Columns": [
+          {
+            "Column Name": "col5",
+            "Data Type": "varchar",
+            "Data Type Mod": 0,
+            "Data Distribution": [4,8]
+          },
+          {
+            "Column Name": "col6",
+            "Data Type": "int",
+            "Data Type Mod": 0,
+            "Data Distribution": [0,100]
+          }
+        ],
+        "Column Distribution" : [0.5, 0.5],
+        "Primary Key": {
+          "Name": "",
+          "Data Type": ""
+        },
+        "Foreign Key": [
+          {
+            "Foreign Key Name": "",
+            "Foreign Key Type": "",
+            "Referenced Table": "",
+            "Referenced Primary Key": "",
+            "Referenced Primary Key Type": ""
+          }
+        ]
+      },
+      {
+        "Table Name": "tb44",
+        "Table Columns": [
+          {
+            "Column Name": "col7",
+            "Data Type": "int",
+            "Data Type Mod": 0,
+            "Data Distribution": [0,100]
+          },
+          {
+            "Column Name": "col5",
+            "Data Type": "varchar",
+            "Data Type Mod": 0,
+            "Data Distribution": [4,8]
+          }
+
+        ],
+        "Column Distribution" : [0.5, 0.5],
+        "Primary Key": {
+          "Name": "",
+          "Data Type": ""
+        },
+        "Foreign Key": [
+          {
+            "Foreign Key Name": "",
+            "Foreign Key Type": "",
+            "Referenced Table": "",
+            "Referenced Primary Key": "",
+            "Referenced Primary Key Type": ""
+          }
+        ]
+      }
+    ],
+    "Constraints": {
+      "size of workload" : 5000,
+      "read write ratio": 0.9,
+      "average table num": [0.5, 0.5],
+      "table-query access distribution": [0.25, 0.25, 0.25, 0.25],
+      "query comparison operator ratio" : [0.25, 0.25, 0.25, 0.25],
+      "table domain distribution" : [0.5, 0.5],
+      "query logic predicate num" : [0.4,0.4,0.2],
+      "average aggregation operator num" : [0.5,0.3,0.2],
+      "average query colomn num":[0,0.4,0.3,0.3],
+      "group by ratio if read SQL":[0.8,0.2],
+      "order by desc or asc if grouped":[0.85,0.15]
+    },
+    "Generation File":"../res/dwg.wg"
+  }
+  
