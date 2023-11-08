@@ -1,0 +1,140 @@
+{
+    "autovacuum_analyze_scale_factor": {
+        "max": 100,
+        "min": 0,
+        "type": "integer",
+        "important_rank": 1
+    },
+    "autovacuum_analyze_threshold": {
+        "max": 2147483647,
+        "min": 0,
+        "type": "integer",
+        "important_rank": 2
+    },
+    "autovacuum_naptime": {
+        "max": 2147483,
+        "min": 1,
+        "type": "integer",
+        "important_rank": 3
+    },
+    "autovacuum_vacuum_cost_delay": {
+        "max": 100,
+        "min": 0,
+        "type": "integer",
+        "important_rank": 4
+    },
+    "autovacuum_vacuum_scale_factor": {
+        "max": 100,
+        "min": 0,
+        "type": "integer",
+        "important_rank": 5
+    },
+    "autovacuum_vacuum_threshold": {
+        "max": 10000000,
+        "min": 0,
+        "type": "integer",
+        "important_rank": 6
+    },
+    "backend_flush_after": {
+        "max": 256,
+        "min": 0,
+        "type": "integer",
+        "important_rank": 7
+    },
+    "bgwriter_flush_after": {
+        "max": 256,
+        "min": 0,
+        "type": "integer",
+        "important_rank": 8
+    },
+    "bgwriter_lru_maxpages": {
+        "max": 1000,
+        "min": 0,
+        "type": "integer",
+        "important_rank": 9
+    },
+    "default_statistics_target": {
+        "max": 10000,
+        "min": -100,
+        "type": "integer",
+        "important_rank": 10
+    },
+    "effective_cache_size": {
+        "max": 2147483647,
+        "min": 1,
+        "type": "integer",
+        "important_rank": 11
+    },
+    "effective_io_concurrency": {
+        "max": 1000,
+        "min": 0,
+        "type": "integer",
+        "important_rank": 12
+    },
+    "join_collapse_limit": {
+        "max": 2147483647,
+        "min": 1,
+        "type": "integer",
+        "important_rank": 13
+    },
+    "maintenance_work_mem": {
+        "max": 2147483647,
+        "min": 1024,
+        "type": "integer",
+        "important_rank": 14
+    },
+    "max_stack_depth": {
+        "max": 7551,
+        "min": 100,
+        "type": "integer",
+        "important_rank": 15
+    },
+    "temp_buffers": {
+        "max": 10737418,
+        "min": 100,
+        "type": "integer",
+        "important_rank": 16
+    },
+    "temp_file_limit": {
+        "max": 2147483647,
+        "min": 0,
+        "type": "integer",
+        "important_rank": 17
+    },
+    "vacuum_cost_limit": {
+        "max": 10000,
+        "min": 1,
+        "type": "integer",
+        "important_rank": 18
+    },
+    "vacuum_cost_page_dirty": {
+        "max": 10000,
+        "min": 0,
+        "type": "integer",
+        "important_rank": 19
+    },
+    "vacuum_cost_page_hit": {
+        "max": 10000,
+        "min": 0,
+        "type": "integer",
+        "important_rank": 20
+    },
+    "vacuum_cost_page_miss": {
+        "max": 10000,
+        "min": 0,
+        "type": "integer",
+        "important_rank": 21
+    },
+    "wal_writer_delay": {
+        "max": 10000,
+        "min": 1,
+        "type": "integer",
+        "important_rank": 22
+    },
+    "work_mem": {
+        "max": 2147483647,
+        "min": 64,
+        "type": "integer",
+        "important_rank": 23
+    }
+}

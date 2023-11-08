@@ -1,0 +1,114 @@
+[2023-11-06 14:23:09,981:stress_testing_tool.py#L123:INFO]: sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 32
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+SQL statistics:
+    queries performed:
+        read:                            448
+        write:                           128
+        other:                           64
+        total:                           640
+    transactions:                        32     (1.57 per sec.)
+    queries:                             640    (31.48 per sec.)
+    ignored errors:                      0      (0.00 per sec.)
+    reconnects:                          0      (0.00 per sec.)
+
+General statistics:
+    total time:                          20.3295s
+    total number of events:              32
+
+Latency (ms):
+         min:                                12922.00
+         avg:                                17808.86
+         max:                                20328.30
+         95th percentile:                    20137.61
+         sum:                               569883.53
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   17.8089/2.02
+
+
+[2023-11-06 14:24:30,583:stress_testing_tool.py#L123:INFO]: sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 32
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+SQL statistics:
+    queries performed:
+        read:                            448
+        write:                           128
+        other:                           64
+        total:                           640
+    transactions:                        32     (1.91 per sec.)
+    queries:                             640    (38.11 per sec.)
+    ignored errors:                      0      (0.00 per sec.)
+    reconnects:                          0      (0.00 per sec.)
+
+General statistics:
+    total time:                          16.7908s
+    total number of events:              32
+
+Latency (ms):
+         min:                                 9458.67
+         avg:                                14849.27
+         max:                                16788.69
+         95th percentile:                    16519.10
+         sum:                               475176.76
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   14.8493/2.10
+
+
+[2023-11-06 14:24:48,427:stress_testing_tool.py#L123:INFO]: sysbench 1.0.20 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 32
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+SQL statistics:
+    queries performed:
+        read:                            448
+        write:                           128
+        other:                           64
+        total:                           640
+    transactions:                        32     (2.30 per sec.)
+    queries:                             640    (46.04 per sec.)
+    ignored errors:                      0      (0.00 per sec.)
+    reconnects:                          0      (0.00 per sec.)
+
+General statistics:
+    total time:                          13.8971s
+    total number of events:              32
+
+Latency (ms):
+         min:                                 6866.57
+         avg:                                11452.61
+         max:                                13894.50
+         95th percentile:                    13550.80
+         sum:                               366483.58
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   11.4526/1.87
+
+

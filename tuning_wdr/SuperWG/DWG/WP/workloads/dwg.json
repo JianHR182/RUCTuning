@@ -1,0 +1,124 @@
+{
+    "Table Schema": "noobschema",
+    "Tables": [
+      {
+        "Table Name": "tb11",
+        "Table Columns": [
+          {
+            "Column Name": "col1",
+            "Data Type": "float",
+            "Data Distribution": [0,100]
+          },
+          {
+            "Column Name": "col2",
+            "Data Type": "int",
+            "Data Distribution": [0,100]
+          }
+        ],
+        "Column Distribution" : [0.5, 0.5],
+        "Primary Key": {
+          "Name": "",
+          "Data Type": ""
+        },
+        "Foreign Key": [
+          {
+            "Foreign Key Name": "",
+            "Foreign Key Type": "",
+            "Referenced Table": "",
+            "Referenced Primary Key": "",
+            "Referenced Primary Key Type": ""
+          }
+        ]
+      },
+      {
+        "Table Name": "tb22",
+        "Table Columns": [
+          {
+            "Column Name": "col322",
+            "Data Type": "int",
+            "Data Distribution": [0,100]
+          },
+          {
+            "Column Name": "co4",
+            "Data Type": "int",
+            "Data Distribution": [0,100]
+          }
+
+        ],
+        "Column Distribution" : [0.5, 0.5],
+        "Primary Key": {
+          "Name": "",
+          "Data Type": ""
+        },
+        "Foreign Key": [
+          {
+            "Foreign Key Name": "",
+            "Foreign Key Type": "",
+            "Referenced Table": "",
+            "Referenced Primary Key": "",
+            "Referenced Primary Key Type": ""
+          }
+        ]
+      },
+      {
+        "Table Name": "tb33",
+        "Table Columns": [
+          {
+            "Column Name": "col5",
+            "Data Type": "varchar",
+            "Data Distribution": ["minv","maxv"]
+          },
+          {
+            "Column Name": "col6",
+            "Data Type": "int",
+            "Data Distribution": [0,100]
+          }
+        ],
+        "Column Distribution" : [0.5, 0.5],
+        "Primary Key": {
+          "Name": "",
+          "Data Type": ""
+        },
+        "Foreign Key": [
+          {
+            "Foreign Key Name": "",
+            "Foreign Key Type": "",
+            "Referenced Table": "",
+            "Referenced Primary Key": "",
+            "Referenced Primary Key Type": ""
+          }
+        ]
+      },
+      {
+        "Table Name": "tb44",
+        "Table Columns": [
+          {
+            "Column Name": "col7",
+            "Data Type": "int",
+            "Data Distribution": [0,100]
+          },
+          {
+            "Column Name": "col5",
+            "Data Type": "varchar",
+            "Data Distribution": ["minv","maxv"]
+          }
+
+        ],
+        "Column Distribution" : [0.5, 0.5],
+        "Primary Key": {
+          "Name": "",
+          "Data Type": ""
+        },
+        "Foreign Key": [
+          {
+            "Foreign Key Name": "",
+            "Foreign Key Type": "",
+            "Referenced Table": "",
+            "Referenced Primary Key": "",
+            "Referenced Primary Key Type": ""
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,72 @@
+{
+    "effective_io_concurrency": {
+        "max": 1000,
+        "min": 0,
+        "type": "integer",
+        "important_rank": 1
+    },
+    "wal_buffers": {
+        "step": 1,
+        "type": "integer",
+        "default": 2048.0,
+        "min": -1.0,
+        "max": 65536,
+        "important_rank": 2
+    },
+    "shared_buffers": {
+        "step": 1,
+        "type": "integer",
+        "default": 1024.0,
+        "min": 0,
+        "max": 0,
+        "important_rank": 3
+    },
+    "max_process_memory": {
+        "step": 1,
+        "type": "integer",
+        "default": 12582912.0,
+        "min": 0,
+        "max": 0,
+        "important_rank": 4
+    },
+    "maintenance_work_mem": {
+        "max": 0,
+        "min": 1024,
+        "type": "integer",
+        "important_rank": 5,
+        "default": 16384.0,
+        "step": 128
+    },
+    "work_mem": {
+        "max": 0,
+        "min": 64,
+        "type": "integer",
+        "important_rank": 6,
+        "default": 65536.0,
+        "step": 64
+    },
+    "effective_cache_size": {
+        "max": 2147483647,
+        "min": 1,
+        "type": "integer",
+        "important_rank": 7
+    },
+    "temp_buffers": {
+        "max": 10737418,
+        "min": 100,
+        "type": "integer",
+        "important_rank": 8
+    },
+    "vacuum_cost_limit": {
+        "max": 10000,
+        "min": 1,
+        "type": "integer",
+        "important_rank": 9
+    },
+    "vacuum_cost_page_dirty": {
+        "max": 10000,
+        "min": 0,
+        "type": "integer",
+        "important_rank": 10
+    }
+}
