@@ -3,10 +3,10 @@ sampling_number = 1
 # 模型推荐次数
 iteration = 1
 # 调优方式, 在线True, 离线False
-online = False
+online = True
 # 是否提供负载样本
-static = True
-workload = False
+static = False
+workload = True
 # 是否进行微调, iteration为微调次数
 finetune = False
 
@@ -20,7 +20,7 @@ omm_password = '1234321abc@'
 opengauss_node_path = '/home/omm/data'
 
 # 所使用的压测工具 sysbench 或 dwg
-benchmark = 'dwg'
+benchmark = 'sysbench'
 
 # sysbench配置
 tables = 50
