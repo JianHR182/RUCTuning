@@ -5,9 +5,11 @@ from SuperWG.DWG.WP.WorkloadParser import WP2
 import argparse
 import re
 from SuperWG.DWG.jsonHelper.jsonHelper import parseSQL2json2
+from annoy import AnnoyIndex
+import os
 
 
-def get_train_featrue(db, begin, end):
+def get_train_feature(db, begin, end):
     inner = db.fetch_inner_metric()
     wdr_metrics = db.get_wdr_metric(begin, end)
 
@@ -192,12 +194,14 @@ def get_mapping_feature(db, begin, end):
 def update_knowledge(feature, id, knowledge_path):
     with open(knowledge_path, "r") as k:
         knowledge_len = len(k.readlines())
-        print(knowledge_len)
+        # print(knowledge_len)
     if knowledge_len == 0:
         knowledge = dict()
     else:
         with open(knowledge_path, "r") as k:
             knowledge = json.load(k)
+        if len(knowledge) >= 1000 and len(knowledge) % 100 == 0:
+            build_index(knowledge_path)
     key = ''
     feature = str([float(i) for i in feature])
     for s in feature[1:-1].split(','):
@@ -206,6 +210,7 @@ def update_knowledge(feature, id, knowledge_path):
     with open(knowledge_path, "w") as f:
         s = json.dumps(knowledge, indent=4)
         f.writelines(s)
+
 
 def string2list(s):
     s = s.split(' ')
@@ -227,16 +232,31 @@ def mapping(feature, knowledge_path):
             key = list(knowledge_dict.keys())[0]
             return knowledge_dict[key]
 
-        # 匹配知识库
-        min_dist = 99999999999
-        familiar = None
         # 将knowledge_dict中的所有key (feature) 转换成二维数组, 便于匹配时归一化各维数据
         keys = []
-        for k in knowledge_dict:
+        for k in knowledge_dict.keys():
             if len(k.split(' ')) != len(feature):
                 continue
             keys.append(np.array(string2list(k)))
         keys = np.array(keys)
+
+        if len(knowledge_dict) >= 1000:
+            isann = False
+            current_directory = os.path.dirname(os.path.abspath(__file__))
+            for filename in os.listdir(current_directory):
+                if filename.endswith(".ann"):
+                    isann = True
+                    break
+            if isann:
+                top10_keys = []
+                top10_feas = get_top10(feature)
+                for fea in top10_feas:
+                    top10_keys.append(np.array(fea))
+                keys = np.array(top10_keys)
+
+        # 匹配知识库
+        min_dist = 99999999999
+        familiar = None
 
         max_val = np.max(keys, axis=0)
         min_val = np.min(keys, axis=0)
@@ -254,5 +274,58 @@ def mapping(feature, knowledge_path):
                     key = key + t
                 familiar = knowledge_dict[key]
     return familiar
+
+def build_index(knowledge_path):
+    with open(knowledge_path, "r") as f:
+        data = f.read()
+    if data:
+        knowledge = json.loads(data)
+        features = []
+        dims = []
+        features_str = knowledge.keys()
+        for fea in features_str:
+            vector = fea.strip().split(' ')
+            vector = [float(i) for i in vector]
+            features.append(vector)
+        dim = len(features[0])
+        t = AnnoyIndex(dim, "euclidean")
+        i = 0
+        restfeas = []
+        for fea in features:
+            if len(fea) != dim:
+                restfeas.append(fea)
+                continue
+            t.add_item(i, fea)
+            i += 1
+        t.build(10)
+        t.save("{}dims.ann".format(dim))
+
+        dim = len(restfeas[0])
+        tr = AnnoyIndex(dim, "euclidean")
+        i = 0
+        for fea in restfeas:
+            tr.add_item(i, fea)
+            i += 1
+        tr.build(10)
+        tr.save("{}dims.ann".format(dim))
+
+
+def get_top10(feature):
+    fea = feature.strip().split(' ')
+    fea = [float(i) for i in fea]
+    dim = len(fea)
+    u = AnnoyIndex(dim, "euclidean")
+    u.load("{}dims.ann".format(dim))
+    index = u.get_nns_by_vector(fea, 10)
+    features = []
+    for i in index:
+        features.append(u.get_item_vector(i))
+    u.unload()
+    return features
+
+if __name__ == "__main__":
+    test = "35.3 53.8 2.0 0.00018547157201923614 9.0 92.3917588163385 100.0 7.0 608533.0 133987231894.0 38.0 52085.0 108704.0 2830316.0 5466.0 844630.0 0.0 0.0 539397369.0 228.0"
+    top10_feas = get_top10(test)
+    print(top10_feas)
 
 

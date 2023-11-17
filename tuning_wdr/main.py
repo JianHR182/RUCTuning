@@ -4,7 +4,7 @@ import os
 import config
 from Database import Database
 from knob_ranking.shap_final import knob_selection
-from knowledge_transfer import update_knowledge, mapping, get_train_featrue, get_mapping_feature
+from knowledge_transfer import update_knowledge, mapping, get_train_feature, get_mapping_feature
 from tuner import tuner
 from utils import analyse_result, save_result
 
@@ -27,7 +27,7 @@ if __name__ == '__main__':
         begin = db.get_snapshot()
         t.tune()
         end = db.get_snapshot()
-        feature = get_train_featrue(db, begin, end)
+        feature = get_train_feature(db, begin, end)
         # 2. 结果整理: 初始与最优的对比
         print('offline tuning over')
         best_knob, max_tps = analyse_result(t.id)
