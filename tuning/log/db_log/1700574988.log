@@ -1,0 +1,48 @@
+[2023-11-21 21:56:32,344:Database.py#L54:INFO]: Stopping cluster.
+=========================================
+Successfully stopped cluster.
+=========================================
+End stop cluster.
+Starting cluster.
+=========================================
+[SUCCESS] opengauss1
+[BACKEND] WARNING: The parameter logging_collector is set to off. The log will not be recorded to file. Please check any error manually.
+=========================================
+Successfully started.
+
+[2023-11-21 21:56:40,028:Database.py#L54:INFO]: Stopping cluster.
+=========================================
+Successfully stopped cluster.
+=========================================
+End stop cluster.
+Starting cluster.
+=========================================
+[SUCCESS] opengauss1
+[BACKEND] WARNING: The parameter logging_collector is set to off. The log will not be recorded to file. Please check any error manually.
+=========================================
+Successfully started.
+
+[2023-11-21 21:59:01,791:Database.py#L54:INFO]: Stopping cluster.
+=========================================
+Successfully stopped cluster.
+=========================================
+End stop cluster.
+Starting cluster.
+=========================================
+[SUCCESS] opengauss1
+[BACKEND] WARNING: The parameter logging_collector is set to off. The log will not be recorded to file. Please check any error manually.
+=========================================
+Successfully started.
+
+[2023-11-21 22:00:42,720:Database.py#L54:INFO]: Stopping cluster.
+=========================================
+Successfully stopped cluster.
+=========================================
+End stop cluster.
+Starting cluster.
+=========================================
+[SUCCESS] opengauss1
+[BACKEND] WARNING: The parameter logging_collector is set to off. The log will not be recorded to file. Please check any error manually.
+=========================================
+Successfully started.
+

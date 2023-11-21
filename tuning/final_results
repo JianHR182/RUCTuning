@@ -1,0 +1,8 @@
+2023-11-21 21:41:30	offline	{'max_process_memory': 12582912, 'shared_buffers': 1024, 'maintenance_work_mem': 16384, 'wal_buffers': 2048, 'temp_buffers': 128, 'backend_flush_after': 0, 'effective_cache_size': 16384}	10.04	10.04
+2023-11-21 21:52:12	offline	{'max_process_memory': 14867754, 'shared_buffers': 342605, 'maintenance_work_mem': 12229287, 'wal_buffers': 117659, 'temp_buffers': 392435648, 'backend_flush_after': 193, 'effective_cache_size': 33709}	1151.5723969228318	676.4323392703218
+2023-11-21 22:35:36	offline	{'max_process_memory': 14359753, 'shared_buffers': 415592, 'maintenance_work_mem': 3231145, 'wal_buffers': 200166, 'temp_buffers': 121615818, 'backend_flush_after': 25, 'effective_cache_size': 7277360}	1379.8581353857508	1288.7988225541496
+2023-11-21 22:38:23	online	{'maintenance_work_mem': 16384, 'temp_buffers': 128, 'backend_flush_after': 0, 'effective_cache_size': 16384}	0.83	0.71
+2023-11-21 22:42:02	online	{'maintenance_work_mem': 16384, 'temp_buffers': 128, 'backend_flush_after': 0, 'effective_cache_size': 16384}	1434.0047437914973	1336.2205538562855
+2023-11-21 22:46:42	online	{'maintenance_work_mem': 3231145, 'temp_buffers': 121615818, 'backend_flush_after': 25, 'effective_cache_size': 7277360}	1434.871725022324	1335.0857513641874
+2023-11-21 22:48:17	online	{'maintenance_work_mem': 3231145, 'temp_buffers': 121615818, 'backend_flush_after': 25, 'effective_cache_size': 7277360}	1.22	0.96
+2023-11-21 22:57:12	offline	{'max_process_memory': 12582912, 'shared_buffers': 1024, 'maintenance_work_mem': 16384, 'wal_buffers': 2048, 'temp_buffers': 128, 'backend_flush_after': 0, 'effective_cache_size': 16384}	1.18	1.18

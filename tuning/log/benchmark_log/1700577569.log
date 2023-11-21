@@ -1,0 +1,44 @@
+total sql num : 100001
+total time consumed : 74.83869314193726
+	thread 0 processed sql num : 10000
+	thread 0 using time : 62.80894589424133
+	thread 1 processed sql num : 10000
+	thread 1 using time : 58.81058645248413
+	thread 2 processed sql num : 10000
+	thread 2 using time : 57.616735219955444
+	thread 3 processed sql num : 10000
+	thread 3 using time : 59.013556241989136
+	thread 4 processed sql num : 10000
+	thread 4 using time : 74.8370635509491
+	thread 5 processed sql num : 10000
+	thread 5 using time : 60.55866837501526
+	thread 6 processed sql num : 10000
+	thread 6 using time : 57.601022720336914
+	thread 7 processed sql num : 10000
+	thread 7 using time : 62.033066749572754
+	thread 8 processed sql num : 10000
+	thread 8 using time : 58.72230339050293
+	thread 9 processed sql num : 9999
+	thread 9 using time : 58.626702070236206
+total sql num : 100001
+total time consumed : 69.7354736328125
+	thread 0 processed sql num : 10000
+	thread 0 using time : 58.424604654312134
+	thread 1 processed sql num : 10000
+	thread 1 using time : 55.53697204589844
+	thread 2 processed sql num : 10000
+	thread 2 using time : 55.018123149871826
+	thread 3 processed sql num : 10000
+	thread 3 using time : 53.33308124542236
+	thread 4 processed sql num : 10000
+	thread 4 using time : 69.7339026927948
+	thread 5 processed sql num : 10000
+	thread 5 using time : 57.07991075515747
+	thread 6 processed sql num : 10000
+	thread 6 using time : 54.50200796127319
+	thread 7 processed sql num : 10000
+	thread 7 using time : 58.42125582695007
+	thread 8 processed sql num : 10000
+	thread 8 using time : 55.48739552497864
+	thread 9 processed sql num : 9999
+	thread 9 using time : 55.91989731788635

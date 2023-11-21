@@ -1,0 +1,60 @@
+[2023-11-21 22:54:09,221:Database.py#L54:INFO]: Stopping cluster.
+=========================================
+Successfully stopped cluster.
+=========================================
+End stop cluster.
+Starting cluster.
+=========================================
+[SUCCESS] opengauss1
+[BACKEND] WARNING: The parameter logging_collector is set to off. The log will not be recorded to file. Please check any error manually.
+=========================================
+Successfully started.
+
+[2023-11-21 22:54:16,784:Database.py#L54:INFO]: Stopping cluster.
+=========================================
+Successfully stopped cluster.
+=========================================
+End stop cluster.
+Starting cluster.
+=========================================
+[SUCCESS] opengauss1
+[BACKEND] WARNING: The parameter logging_collector is set to off. The log will not be recorded to file. Please check any error manually.
+=========================================
+Successfully started.
+
+[2023-11-21 22:55:34,110:Database.py#L54:INFO]: Stopping cluster.
+=========================================
+Successfully stopped cluster.
+=========================================
+End stop cluster.
+Starting cluster.
+=========================================
+[SUCCESS] opengauss1
+[BACKEND] WARNING: The parameter logging_collector is set to off. The log will not be recorded to file. Please check any error manually.
+=========================================
+Successfully started.
+
+[2023-11-21 22:55:58,728:Database.py#L54:INFO]: Stopping cluster.
+=========================================
+Successfully stopped cluster.
+=========================================
+End stop cluster.
+Starting cluster.
+=========================================
+[SUCCESS] opengauss1
+[BACKEND] WARNING: The parameter logging_collector is set to off. The log will not be recorded to file. Please check any error manually.
+=========================================
+Successfully started.
+
+[2023-11-21 22:57:15,978:Database.py#L54:INFO]: Stopping cluster.
+=========================================
+Successfully stopped cluster.
+=========================================
+End stop cluster.
+Starting cluster.
+=========================================
+[SUCCESS] opengauss1
+[BACKEND] WARNING: The parameter logging_collector is set to off. The log will not be recorded to file. Please check any error manually.
+=========================================
+Successfully started.
+

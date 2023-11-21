@@ -200,6 +200,7 @@ def update_knowledge(feature, id, knowledge_path):
     else:
         with open(knowledge_path, "r") as k:
             knowledge = json.load(k)
+        #     知识库大于1000条，每隔100条更新一次索引
         if len(knowledge) >= 1000 and len(knowledge) % 100 == 0:
             build_index(knowledge_path)
     key = ''
@@ -240,14 +241,17 @@ def mapping(feature, knowledge_path):
             keys.append(np.array(string2list(k)))
         keys = np.array(keys)
 
+        # 判断知识库大于1000条
         if len(knowledge_dict) >= 1000:
             isann = False
             current_directory = os.path.dirname(os.path.abspath(__file__))
             for filename in os.listdir(current_directory):
+                # 判断是否已经建立索引
                 if filename.endswith(".ann"):
                     isann = True
                     break
             if isann:
+                # 返回top10相似负载
                 top10_keys = []
                 top10_feas = get_top10(feature)
                 for fea in top10_feas:
@@ -287,6 +291,7 @@ def build_index(knowledge_path):
             vector = fea.strip().split(' ')
             vector = [float(i) for i in vector]
             features.append(vector)
+        # 带静态指标和不带静态指标分开建立索引
         dim = len(features[0])
         t = AnnoyIndex(dim, "euclidean")
         i = 0
@@ -297,6 +302,7 @@ def build_index(knowledge_path):
                 continue
             t.add_item(i, fea)
             i += 1
+        # 树的数量为10，树的数量影响建立索引的时间和准确度，建立森林是为了解决“真实的 Top K 中部分点不在这个区域”
         t.build(10)
         t.save("{}dims.ann".format(dim))
 
@@ -314,18 +320,18 @@ def get_top10(feature):
     fea = feature.strip().split(' ')
     fea = [float(i) for i in fea]
     dim = len(fea)
+    # 读入索引文件进行查找
     u = AnnoyIndex(dim, "euclidean")
     u.load("{}dims.ann".format(dim))
+    # 得到的是top10特征的下标
     index = u.get_nns_by_vector(fea, 10)
     features = []
     for i in index:
+        # 得到特征值
         features.append(u.get_item_vector(i))
     u.unload()
     return features
 
-if __name__ == "__main__":
-    test = "35.3 53.8 2.0 0.00018547157201923614 9.0 92.3917588163385 100.0 7.0 608533.0 133987231894.0 38.0 52085.0 108704.0 2830316.0 5466.0 844630.0 0.0 0.0 539397369.0 228.0"
-    top10_feas = get_top10(test)
-    print(top10_feas)
+
 
 

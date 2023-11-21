@@ -1,0 +1,66 @@
+total sql num : 100001
+total time consumed : 147.83592414855957
+	thread 0 processed sql num : 10000
+	thread 0 using time : 69.77241444587708
+	thread 1 processed sql num : 10000
+	thread 1 using time : 44.36766457557678
+	thread 2 processed sql num : 10000
+	thread 2 using time : 44.50861477851868
+	thread 3 processed sql num : 10000
+	thread 3 using time : 43.7802095413208
+	thread 4 processed sql num : 10000
+	thread 4 using time : 147.83410692214966
+	thread 5 processed sql num : 10000
+	thread 5 using time : 67.64780116081238
+	thread 6 processed sql num : 10000
+	thread 6 using time : 44.32411241531372
+	thread 7 processed sql num : 10000
+	thread 7 using time : 90.76453709602356
+	thread 8 processed sql num : 10000
+	thread 8 using time : 43.95062017440796
+	thread 9 processed sql num : 9999
+	thread 9 using time : 43.7670111656189
+total sql num : 100001
+total time consumed : 116.43928599357605
+	thread 0 processed sql num : 10000
+	thread 0 using time : 52.55763101577759
+	thread 1 processed sql num : 10000
+	thread 1 using time : 44.80170178413391
+	thread 2 processed sql num : 10000
+	thread 2 using time : 44.18167042732239
+	thread 3 processed sql num : 10000
+	thread 3 using time : 44.919816732406616
+	thread 4 processed sql num : 10000
+	thread 4 using time : 116.4380214214325
+	thread 5 processed sql num : 10000
+	thread 5 using time : 67.55927109718323
+	thread 6 processed sql num : 10000
+	thread 6 using time : 45.00349807739258
+	thread 7 processed sql num : 10000
+	thread 7 using time : 76.2335479259491
+	thread 8 processed sql num : 10000
+	thread 8 using time : 44.088507652282715
+	thread 9 processed sql num : 9999
+	thread 9 using time : 44.66874647140503
+total sql num : 100001
+total time consumed : 86.83865666389465
+	thread 0 processed sql num : 10000
+	thread 0 using time : 86.23812222480774
+	thread 1 processed sql num : 10000
+	thread 1 using time : 46.616528034210205
+	thread 2 processed sql num : 10000
+	thread 2 using time : 46.883136510849
+	thread 3 processed sql num : 10000
+	thread 3 using time : 47.36448884010315
+	thread 4 processed sql num : 10000
+	thread 4 using time : 86.74215078353882
+	thread 5 processed sql num : 10000
+	thread 5 using time : 63.498199224472046
+	thread 6 processed sql num : 10000
+	thread 6 using time : 47.58991980552673
+	thread 7 processed sql num : 10000
+	thread 7 using time : 52.91424822807312
+	thread 8 processed sql num : 10000
+	thread 8 using time : 46.323424100875854
+	thread 9 processed sql num : 9999
+	thread 9 using time : 46.079018354415894

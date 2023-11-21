@@ -1,0 +1,58 @@
+{
+    "max_process_memory": {
+        "min_val": "2097152",
+        "max_val": "2147483647",
+        "boot_val": "12582912",
+        "vartype": "integer",
+        "enumvals": null,
+        "restart": true
+    },
+    "shared_buffers": {
+        "min_val": "16",
+        "max_val": "1073741823",
+        "boot_val": "1024",
+        "vartype": "integer",
+        "enumvals": null,
+        "restart": true
+    },
+    "maintenance_work_mem": {
+        "min_val": "1024",
+        "max_val": "2147483647",
+        "boot_val": "16384",
+        "vartype": "integer",
+        "enumvals": null,
+        "restart": false
+    },
+    "wal_buffers": {
+        "min_val": "-1",
+        "max_val": "262144",
+        "boot_val": "2048",
+        "vartype": "integer",
+        "enumvals": null,
+        "restart": true
+    },
+    "temp_buffers": {
+        "min_val": "100",
+        "max_val": "1073741823",
+        "boot_val": "128",
+        "vartype": "integer",
+        "enumvals": null,
+        "restart": false
+    },
+    "backend_flush_after": {
+        "min_val": "0",
+        "max_val": "256",
+        "boot_val": "0",
+        "vartype": "integer",
+        "enumvals": null,
+        "restart": false
+    },
+    "effective_cache_size": {
+        "min_val": "1",
+        "max_val": "2147483647",
+        "boot_val": "16384",
+        "vartype": "integer",
+        "enumvals": null,
+        "restart": false
+    }
+}

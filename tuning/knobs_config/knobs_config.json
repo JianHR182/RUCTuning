@@ -1,0 +1,100 @@
+{
+    "wal_buffers": {
+        "step": 1,
+        "vartype": "integer",
+        "default": 2048.0,
+        "min_val": -1.0,
+        "max_val": 262144,
+        "restart": true
+    },
+    "shared_buffers": {
+        "step": 1,
+        "vartype": "integer",
+        "default": 1024.0,
+        "min_val": 0,
+        "max_val": 6144,
+        "restart": true
+    },
+    "max_process_memory": {
+        "step": 1,
+        "vartype": "integer",
+        "default": 12582912.0,
+        "min_val": 0,
+        "max_val": 2147483647,
+        "restart": true
+    },
+    "maintenance_work_mem": {
+        "max_val": 1048576,
+        "min_val": 1024,
+        "vartype": "integer",
+        "important_rank": 34,
+        "default": 16384.0,
+        "step": 128,
+        "restart": false
+    },
+    "work_mem": {
+        "min_val": 64,
+        "max_val": 2147483647,
+        "vartype": "integer",
+        "important_rank": 48,
+        "default": 65536.0,
+        "step": 64,
+        "restart": false
+    },
+    "effective_cache_size": {
+        "max_val": 2147483647,
+        "min_val": 1,
+        "vartype": "integer",
+        "important_rank": 11,
+        "restart": false
+    },
+    "effective_io_concurrency": {
+        "max_val": 1000,
+        "min_val": 0,
+        "vartype": "integer",
+        "important_rank": 12,
+        "restart": false
+    },
+    "temp_buffers": {
+        "max_val": 10737418,
+        "min_val": 100,
+        "vartype": "integer",
+        "important_rank": 16,
+        "restart": false
+    },
+    "vacuum_cost_limit": {
+        "max_val": 10000,
+        "min_val": 1,
+        "vartype": "integer",
+        "important_rank": 18,
+        "restart": false
+    },
+    "vacuum_cost_page_dirty": {
+        "max_val": 10000,
+        "min_val": 0,
+        "vartype": "integer",
+        "important_rank": 19,
+        "restart": false
+    },
+    "vacuum_cost_page_hit": {
+        "max_val": 10000,
+        "min_val": 0,
+        "vartype": "integer",
+        "important_rank": 20,
+        "restart": false
+    },
+    "vacuum_cost_page_miss": {
+        "max_val": 10000,
+        "min_val": 0,
+        "vartype": "integer",
+        "important_rank": 21,
+        "restart": false
+    },
+    "backend_flush_after": {
+        "max_val": 256,
+        "min_val": 0,
+        "vartype": "integer",
+        "important_rank": 8,
+        "restart": false
+    }
+}
