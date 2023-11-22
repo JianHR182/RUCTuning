@@ -287,14 +287,15 @@ def build_index(knowledge_path):
     if data:
         knowledge = json.loads(data)
         features = []
-        dims = []
         features_str = knowledge.keys()
+        scale_factor = int(1e20)
         for fea in features_str:
             vector = fea.strip().split(' ')
-            vector = [float(i) for i in vector]
+            vector = [round(i * scale_factor) for i in vector]
             features.append(vector)
         # 带静态指标和不带静态指标分开建立索引
         dim = len(features[0])
+        print(features[0])
         t = AnnoyIndex(dim, "euclidean")
         i = 0
         restfeas = []
@@ -307,6 +308,8 @@ def build_index(knowledge_path):
         # 树的数量为10，树的数量影响建立索引的时间和准确度，建立森林是为了解决“真实的 Top K 中部分点不在这个区域”
         t.build(10)
         t.save("{}dims.ann".format(dim))
+        test = t.get_item_vector(0)
+        print([i / scale_factor for i in test])
 
         dim = len(restfeas[0])
         tr = AnnoyIndex(dim, "euclidean")
@@ -319,20 +322,30 @@ def build_index(knowledge_path):
 
 
 def get_top10(feature):
-    fea = [float(i) for i in feature]
-    dim = len(fea)
+    dim = len(feature)
     # 读入索引文件进行查找
     u = AnnoyIndex(dim, "euclidean")
     u.load("{}dims.ann".format(dim))
     # 得到的是top10特征的下标
-    index = u.get_nns_by_vector(fea, 10)
+    index = u.get_nns_by_vector(feature, 10)
     features = []
     for i in index:
         # 得到特征值
         features.append(u.get_item_vector(i))
     u.unload()
+    print(features)
     return features
 
-
-
+if __name__ == "__main__":
+    build_index("knowledge.json")
+    # with open("knowledge.json", "r") as f:
+    #     data = f.read()
+    # if data:
+    #     knowledge = json.loads(data)
+    #     features = []
+    #     features_str = knowledge.keys()
+    #     for fea in features_str:
+    #         vector = fea.strip().split(' ')
+    #         vector = np.array(vector,dtype=np.float32)
+    #         print(vector)
 
