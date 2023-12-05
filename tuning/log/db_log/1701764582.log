@@ -1,0 +1,12 @@
+[2023-12-05 16:23:05,436:Database.py#L54:INFO]: Stopping cluster.
+=========================================
+Successfully stopped cluster.
+=========================================
+End stop cluster.
+Starting cluster.
+=========================================
+=========================================
+[GAUSS-53600]: Can not start the database, the cmd is source /home/omm/.bashrc; python3 '/opt/huawei/install/om/script/local/StartInstance.py' -U omm -R /opt/huawei/install/app -t 300 --security-mode=off,  Error:
+[FAILURE] opengauss1:
+[GAUSS-50204] : Failed to read /home/omm/data/postgresql.conf..
+

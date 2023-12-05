@@ -59,6 +59,62 @@ def string2list(s):
         data.append(float(s[i]))
     return data
 
+
+# def build_index(knowledge_path):
+#     with open(knowledge_path, "r") as f:
+#         data = f.read()
+#     if data:
+#         knowledge = json.loads(data)
+#         features = []
+#         features_str = knowledge.keys()
+#         scale_factor = int(1e20)
+#         for fea in features_str:
+#             vector = fea.strip().split(' ')
+#             vector = [round(i * scale_factor) for i in vector]
+#             features.append(vector)
+#         # 带静态指标和不带静态指标分开建立索引
+#         dim = len(features[0])
+#         print(features[0])
+#         t = AnnoyIndex(dim, "euclidean")
+#         i = 0
+#         restfeas = []
+#         for fea in features:
+#             if len(fea) != dim:
+#                 restfeas.append(fea)
+#                 continue
+#             t.add_item(i, fea)
+#             i += 1
+#         # 树的数量为10，树的数量影响建立索引的时间和准确度，建立森林是为了解决“真实的 Top K 中部分点不在这个区域”
+#         t.build(10)
+#         t.save("{}dims.ann".format(dim))
+#         test = t.get_item_vector(0)
+#         print([i / scale_factor for i in test])
+#
+#         dim = len(restfeas[0])
+#         tr = AnnoyIndex(dim, "euclidean")
+#         i = 0
+#         for fea in restfeas:
+#             tr.add_item(i, fea)
+#             i += 1
+#         tr.build(10)
+#         tr.save("{}dims.ann".format(dim))
+#
+#
+# def get_top10(feature):
+#     dim = len(feature)
+#     # 读入索引文件进行查找
+#     u = AnnoyIndex(dim, "euclidean")
+#     u.load("{}dims.ann".format(dim))
+#     # 得到的是top10特征的下标
+#     index = u.get_nns_by_vector(feature, 10)
+#     features = []
+#     for i in index:
+#         # 得到特征值
+#         features.append(u.get_item_vector(i))
+#     u.unload()
+#     print(features)
+#     return features
+
 if __name__ == "__main__":
     # test_fea1 = "35.3 53.8 2.0 0.00018547157201923614 9.0 92.3917588163385 100.0 7.0 608533.0 133987231894.0 38.0 52085.0 108704.0 2830316.0 5466.0 844630.0 0.0 0.0 539397369.0 228.0"
     # fea1 = get_top10(test_fea1)

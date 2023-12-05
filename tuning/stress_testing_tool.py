@@ -125,7 +125,7 @@ class stress_testing_tool:
 
         lines = res.split('\n')
         for line in lines:
-            if 'transaction' in line:
+            if 'queries:' in line:
                 tps = float(line.split()[2].split('(')[1])
                 return tps
         self.logger.info('sysbench run error: \n')

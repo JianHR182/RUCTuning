@@ -1,0 +1,3 @@
+{"max_process_memory": 12582912, "shared_buffers": 1024, "maintenance_work_mem": 16384, "wal_buffers": 2048, "temp_buffers": 128, "backend_flush_after": 0, "effective_cache_size": 16384, "tps": 0.44}
+{"max_process_memory": 14107045, "shared_buffers": 306309, "maintenance_work_mem": 4744389, "wal_buffers": 81004, "temp_buffers": 758015324, "backend_flush_after": 112, "effective_cache_size": 4438424, "tps": 0.42}
+{"max_process_memory": 13670573, "shared_buffers": 127213, "maintenance_work_mem": 8632642, "wal_buffers": 260947, "temp_buffers": 867731008, "backend_flush_after": 225, "effective_cache_size": 4500799, "tps": 0.53}

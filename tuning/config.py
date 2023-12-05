@@ -4,14 +4,14 @@ sampling_number = 1
 # 模型推荐次数
 iteration = 1
 # 调优方式, 在线True, 离线False
-online = True
+online = False
 # 是否进行微调, iteration为微调次数
 finetune = False
 # 在线调优是否允许重启
 restart_when_online = False
-# 是否需要分析静态特征，离线调优时使用
-static = False
-# 是否提供负载样本,在线调优时使用
+# 是否需要分析静态特征，使用dwg离线调优时使用
+static = True
+# 是否提供负载样本，在线调优时使用，如果启用，需要在dwg配置中给出schema_name以及将负载放入（直接覆盖）workload参数所给路径文件中
 isworkload = False
 # 数据库待调整的配置参数文件
 knobs_file = 'knobs_config/knobs-7.json'
@@ -26,9 +26,9 @@ knowledge = 'knowledge.json'
 # 数据库配置
 host = '10.77.10.139'
 port = 15400
-db = 'sysbench20_8m'
+db = 'sysbench50_1m'
 user = 'tianjikun'
-password = 'tianjikun123@'
+password = 'tianjikun1234@'
 omm_password = '1234321abc@'
 opengauss_node_path = '/home/omm/data'
 root_password = '1234321'
@@ -37,7 +37,7 @@ time_wait = 30
 
 
 # 所使用的压测工具 sysbench 或 dwg
-benchmark = 'sysbench'
+benchmark = 'dwg'
 # 压测线程数
 threads = 10
 
@@ -79,4 +79,4 @@ memory = 64
 # monadmin
 mon_db = 'postgres'
 mon_user = 'jhr'
-mon_password = 'hanjiayang180..'
+mon_password = 'jhr123456@'

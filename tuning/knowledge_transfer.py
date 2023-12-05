@@ -8,12 +8,14 @@ from SuperWG.DWG.jsonHelper.jsonHelper import parseSQL2json2
 from annoy import AnnoyIndex
 import os
 
+threshold = 0
+step = 1
 
 def get_train_feature(db, begin, end):
     inner = db.fetch_inner_metric()
     wdr_metrics = db.get_wdr_metric(begin, end)
 
-    if  config.static and config.benchmark == 'dwg':
+    if config.static and config.benchmark == 'dwg':
         parser = argparse.ArgumentParser()
         parser.add_argument('--hostname', type=str, default=config.host)
         parser.add_argument('--username', type=str, default=config.user)
@@ -29,68 +31,79 @@ def get_train_feature(db, begin, end):
 
         args = parser.parse_args()
 
-        if args.use_local=='false':
+        if args.use_local == 'false':
+
             command = "gs_dump -U {} -f {} -p {} -s {} -n {} -F p ".format(args.username, args.sql_path, args.port,
                                                                            args.database_name, args.schema_name)
+            # command = "gs_dump -U jikun -f /home/tianjikun/schema/test.sql -p 15400 dwg -n public -F p"
+            print("command : ", command)
             stdin, stdout, stderr = db.ssh.exec_command(command=command)
-            stdin.write(f'{args.user_password}\n')
+            stdin.write(args.user_password + '\n')
             stdin.flush()
             output = stdout.read().decode()
-            # print(output)
+            print(output)
 
             sftp_client = db.ssh.open_sftp()
             sftp_client.get(localpath=args.cache_path, remotepath=args.sql_path)
             sftp_client.close()
 
             with open(args.cache_path, 'r') as f:
-                content=f.read()
-            # print(type(content),len(content))
-        else:
-            with open(args.sql_path, 'r') as f:
-                content=f.read()
-            # print(type(content),len(content))
+                content = f.read()
+            print(type(content), len(content))
 
-        content_split=re.split('[\n]*;+[\n]*',content)
+        else:
+            print("Warning : using local file {args.sql_path}.")
+
+            with open(args.sql_path, 'r') as f:
+                content = f.read()
+            print(type(content), len(content))
+
+        content_split = re.split('[\n]*;+[\n]*', content)
         print(len(content_split))
-        real_content=[]
+        # content_split = re.sub('\n', '', content_split)
+        real_content = []
         for it in content_split:
+            # if "CREATE" in it and "GRANT" not in it and "INDEX" not in it:
+            # print(it)
+            # real_content.append(it)
             filter_pattern = r"(CREATE TABLE .*)WITH"
-            if re.search(pattern=filter_pattern,string=it,flags=re.DOTALL)!=None:
+            if re.search(pattern=filter_pattern, string=it, flags=re.DOTALL) is not None:
+                # print(it)
                 real_content.append(it)
 
-        json_data={
-            "Table Schema": "noobschema",
+        json_data = {
+            "Table Schema": args.schema_name,
             "Tables": [],
             "Constraints": {
-            "size of workload" : 1000,
-            "read write ratio": 0.9,
-            "average table num": [0.5,0.5],
-            "table-query access distribution": [],
-            "query comparison operator ratio" : [0.25,0.25,0.25,0.25],
-            "table domain distribution" : [0.5,0.5],
-            "query logic predicate num" : [0.4,0.4,0.2],
-            "average aggregation operator num" : [0.5,0.3,0.2],
-            "average query colomn num":[0,0.4,0.3,0.3],
-            "group by ratio if read SQL":[0.8,0.2],
-            "order by desc or asc if grouped":[0.85,0.15]
+                "size of workload": config.sql_num,
+                "read write ratio": config.read_write_ratio,
+                "average table num": [0.9, 0.1],
+                "table-query access distribution": [],
+                "query comparison operator ratio": [0.1, 0.1, 0.8, 0],
+                "table domain distribution": [0.5, 0.5],
+                "query logic predicate num": [0.6, 0.2, 0.2],
+                "average aggregation operator num": [0.5, 0.3, 0.2],
+                "average query colomn num": [0, 0.6, 0.3, 0.1],
+                "group by ratio if read SQL": [0.5, 0.5],
+                "order by desc or asc if grouped": [0.5, 0.5]
             },
-            "Generation File":"../res/res.wg"
+            "Generation File": config.workload
         }
 
-        tables=[]
+        tables = []
         for it in real_content:
-            one_table=parseSQL2json2(it)
+            one_table = parseSQL2json2(it)
             tables.append(one_table)
-        json_data["Tables"]=tables
+        json_data["Tables"] = tables
         import numpy as np
-        json_data["Constraints"]["table-query access distribution"]\
-            =np.full(len(json_data["Tables"]),1.0/len(json_data["Tables"])).tolist()
+
+        json_data["Constraints"]["table-query access distribution"] \
+            = np.full(len(json_data["Tables"]), 1.0 / len(json_data["Tables"])).tolist()
 
         with open(args.result_path, "w") as f:
             json.dump(json_data, f, indent=4)
             print("parse succeeded.")
             print("result written in res.json.")
-
 
         wp = WP2()
         wp.parse_schema(args.result_path)
@@ -99,6 +112,7 @@ def get_train_feature(db, begin, end):
     else:
         feature = inner + wdr_metrics
     return feature
+
 
 def get_mapping_feature(db, begin, end):
     inner = db.fetch_inner_metric()
@@ -119,68 +133,79 @@ def get_mapping_feature(db, begin, end):
 
         args = parser.parse_args()
 
-        if args.use_local=='false':
+        if args.use_local == 'false':
+
             command = "gs_dump -U {} -f {} -p {} -s {} -n {} -F p ".format(args.username, args.sql_path, args.port,
                                                                            args.database_name, args.schema_name)
+            # command = "gs_dump -U jikun -f /home/tianjikun/schema/test.sql -p 15400 dwg -n public -F p"
+            print("command : ", command)
             stdin, stdout, stderr = db.ssh.exec_command(command=command)
-            stdin.write(f'{args.user_password}\n')
+            stdin.write(args.user_password + '\n')
             stdin.flush()
             output = stdout.read().decode()
-            # print(output)
+            print(output)
 
             sftp_client = db.ssh.open_sftp()
             sftp_client.get(localpath=args.cache_path, remotepath=args.sql_path)
             sftp_client.close()
 
             with open(args.cache_path, 'r') as f:
-                content=f.read()
-            # print(type(content),len(content))
-        else:
-            with open(args.sql_path, 'r') as f:
-                content=f.read()
-            # print(type(content),len(content))
+                content = f.read()
+            print(type(content), len(content))
 
-        content_split=re.split('[\n]*;+[\n]*',content)
+        else:
+            print("Warning : using local file {args.sql_path}.")
+
+            with open(args.sql_path, 'r') as f:
+                content = f.read()
+            print(type(content), len(content))
+
+        content_split = re.split('[\n]*;+[\n]*', content)
         print(len(content_split))
-        real_content=[]
+        # content_split = re.sub('\n', '', content_split)
+        real_content = []
         for it in content_split:
+            # if "CREATE" in it and "GRANT" not in it and "INDEX" not in it:
+            # print(it)
+            # real_content.append(it)
             filter_pattern = r"(CREATE TABLE .*)WITH"
-            if re.search(pattern=filter_pattern,string=it,flags=re.DOTALL)!=None:
+            if re.search(pattern=filter_pattern, string=it, flags=re.DOTALL) is not None:
+                # print(it)
                 real_content.append(it)
 
-        json_data={
-            "Table Schema": "noobschema",
+        json_data = {
+            "Table Schema": args.schema_name,
             "Tables": [],
             "Constraints": {
-            "size of workload" : 1000,
-            "read write ratio": 0.9,
-            "average table num": [0.5,0.5],
-            "table-query access distribution": [],
-            "query comparison operator ratio" : [0.25,0.25,0.25,0.25],
-            "table domain distribution" : [0.5,0.5],
-            "query logic predicate num" : [0.4,0.4,0.2],
-            "average aggregation operator num" : [0.5,0.3,0.2],
-            "average query colomn num":[0,0.4,0.3,0.3],
-            "group by ratio if read SQL":[0.8,0.2],
-            "order by desc or asc if grouped":[0.85,0.15]
+                "size of workload": config.sql_num,
+                "read write ratio": config.read_write_ratio,
+                "average table num": [0.9, 0.1],
+                "table-query access distribution": [],
+                "query comparison operator ratio": [0.1, 0.1, 0.8, 0],
+                "table domain distribution": [0.5, 0.5],
+                "query logic predicate num": [0.6, 0.2, 0.2],
+                "average aggregation operator num": [0.5, 0.3, 0.2],
+                "average query colomn num": [0, 0.6, 0.3, 0.1],
+                "group by ratio if read SQL": [0.5, 0.5],
+                "order by desc or asc if grouped": [0.5, 0.5]
             },
-            "Generation File":"../res/res.wg"
+            "Generation File": config.workload
         }
 
-        tables=[]
+        tables = []
         for it in real_content:
-            one_table=parseSQL2json2(it)
+            one_table = parseSQL2json2(it)
             tables.append(one_table)
-        json_data["Tables"]=tables
+        json_data["Tables"] = tables
         import numpy as np
-        json_data["Constraints"]["table-query access distribution"]\
-            =np.full(len(json_data["Tables"]),1.0/len(json_data["Tables"])).tolist()
+
+        json_data["Constraints"]["table-query access distribution"] \
+            = np.full(len(json_data["Tables"]), 1.0 / len(json_data["Tables"])).tolist()
 
         with open(args.result_path, "w") as f:
             json.dump(json_data, f, indent=4)
             print("parse succeeded.")
             print("result written in res.json.")
-
 
         wp = WP2()
         wp.parse_schema(args.result_path)
@@ -200,8 +225,7 @@ def update_knowledge(feature, id, knowledge_path):
     else:
         with open(knowledge_path, "r") as k:
             knowledge = json.load(k)
-        #     知识库大于1000条，每隔100条更新一次索引
-        if len(knowledge) >= 500 and len(knowledge) % 50 == 0:
+        if len(knowledge) >= threshold and len(knowledge) % step == 0:
             build_index(knowledge_path)
     key = ''
     feature = str([float(i) for i in feature])
@@ -219,6 +243,7 @@ def string2list(s):
     for i in range(len(s)):
         data.append(float(s[i]))
     return data
+
 
 def mapping(feature, knowledge_path):
     # 如果知识库为空, 则匹配失败
@@ -242,8 +267,7 @@ def mapping(feature, knowledge_path):
         keys = np.array(keys)
 
         # 判断知识库大于1000条
-        # if len(knowledge_dict) >= 1000:
-        if len(knowledge_dict) >= 1 :
+        if len(knowledge_dict) >= threshold:
             isann = False
             current_directory = os.path.dirname(os.path.abspath(__file__))
             for filename in os.listdir(current_directory):
@@ -252,13 +276,9 @@ def mapping(feature, knowledge_path):
                     isann = True
                     break
             if isann:
-                # 返回top10相似负载
-                top10_keys = []
-                top10_feas = get_top10(feature)
-                for fea in top10_feas:
-                    top10_keys.append(np.array(fea))
-                keys = np.array(top10_keys)
-                print("从索引中查找")
+                print("--------------从知识库中查找---------------")
+                familiar = get_familar(feature)
+                return familiar
 
         # 匹配知识库
         min_dist = 99999999999
@@ -281,21 +301,97 @@ def mapping(feature, knowledge_path):
                 familiar = knowledge_dict[key]
     return familiar
 
+
+
+def format(knowledge_path):
+    with open(knowledge_path, 'r') as f:
+        if len(f.readlines()) == 0:
+            return None
+
+    with open(knowledge_path, 'r') as f:
+        knowledge_dict = json.load(f)
+
+    acc = 7
+    factor = 1e7
+    # 将knowledge_dict中的所有key (feature) 转换成二维数组, 便于匹配时归一化各维数据
+    keys_20 = []
+    value_20 = []
+    keys_26 = []
+    value_26 = []
+    for k in knowledge_dict.keys():
+        value = knowledge_dict[k]
+        k = string2list(k)
+        if len(k) == 20:
+            keys_20.append(np.array(k))
+            value_20.append(value)
+        if len(k) == 26:
+            keys_26.append(np.array(k))
+            value_26.append(value)
+
+    keys_20 = np.array(keys_20)
+    keys_26 = np.array(keys_26)
+
+    max_val = np.max(keys_20, axis=0)
+    min_val = np.min(keys_20, axis=0)
+    norm = max_val - min_val
+    norm[norm == 0] = 1
+    min = [str(i) for i in min_val.tolist()]
+    min = ' '.join(min)
+    norm_20 = [str(i) for i in norm.tolist()]
+    norm_20 = ' '.join(norm_20)
+
+    data_dict = {}
+    data_dict["min_20"] = min
+    data_dict["norm_20"] = norm_20
+    for k, v in zip(keys_20, value_20):
+        format_k = (k - min_val) / norm
+        format_k = [round(float(i), acc) for i in format_k.tolist()]
+        format_k = [str(int(i * factor)) for i in format_k]
+        format_k = ' '.join(format_k)
+        data_dict[format_k] = v
+
+
+    max_val = np.max(keys_26, axis=0)
+    min_val = np.min(keys_26, axis=0)
+    norm = max_val - min_val
+    norm[norm == 0] = 1
+    min = [str(i) for i in min_val.tolist()]
+    min = ' '.join(min)
+    norm_26 = [str(i) for i in norm.tolist()]
+    norm_26 = ' '.join(norm_26)
+
+    data_dict["min_26"] = min
+    data_dict["norm_26"] = norm_26
+    for k, v in zip(keys_26, value_26):
+        format_k = (k - min_val) / norm
+        format_k = [round(float(i), acc) for i in format_k.tolist()]
+        format_k = [str(int(i * factor)) for i in format_k]
+        format_k = ' '.join(format_k)
+        data_dict[format_k] = v
+
+    with open("buildtree_data.json", 'w') as f:
+        data = json.dumps(data_dict, indent=4)
+        f.writelines(data)
+
+
 def build_index(knowledge_path):
-    with open(knowledge_path, "r") as f:
+    format(knowledge_path)
+    with open("buildtree_data.json", "r") as f:
         data = f.read()
     if data:
         knowledge = json.loads(data)
+        del knowledge['min_20']
+        del knowledge['min_26']
+        del knowledge['norm_20']
+        del knowledge['norm_26']
         features = []
         features_str = knowledge.keys()
-        scale_factor = int(1e20)
         for fea in features_str:
             vector = fea.strip().split(' ')
-            vector = [round(i * scale_factor) for i in vector]
+            vector = [int(i) for i in vector]
             features.append(vector)
         # 带静态指标和不带静态指标分开建立索引
         dim = len(features[0])
-        print(features[0])
         t = AnnoyIndex(dim, "euclidean")
         i = 0
         restfeas = []
@@ -309,7 +405,6 @@ def build_index(knowledge_path):
         t.build(10)
         t.save("{}dims.ann".format(dim))
         test = t.get_item_vector(0)
-        print([i / scale_factor for i in test])
 
         dim = len(restfeas[0])
         tr = AnnoyIndex(dim, "euclidean")
@@ -320,32 +415,53 @@ def build_index(knowledge_path):
         tr.build(10)
         tr.save("{}dims.ann".format(dim))
 
-
-def get_top10(feature):
+def get_familar(feature):
     dim = len(feature)
+    acc = 7
+    factor = 1e7
+
+    fea = np.array(feature)
+    with open("buildtree_data.json", "r") as f:
+        data = json.load(f)
+    min = "min_{}".format(dim)
+    norm = "norm_{}".format(dim)
+
+    min = string2list(data[min])
+    norm = string2list(data[norm])
+
+    min = np.array(min)
+    norm = np.array(norm)
+
+    format_k = (fea - min) / norm
+    format_k = [round(float(i), acc) for i in format_k]
+    format_k = [int(i * factor) for i in format_k]
+
+    # print(format_k)
+
     # 读入索引文件进行查找
     u = AnnoyIndex(dim, "euclidean")
     u.load("{}dims.ann".format(dim))
     # 得到的是top10特征的下标
-    index = u.get_nns_by_vector(feature, 10)
-    features = []
-    for i in index:
-        # 得到特征值
-        features.append(u.get_item_vector(i))
+    index = u.get_nns_by_vector(format_k, 1)
+    # features = []
+    # for i in index:
+    #     # 得到特征值
+    #     features.append(u.get_item_vector(i))
+    vector = u.get_item_vector(index[0])
     u.unload()
-    print(features)
-    return features
+    # print(features)
+    vector = [str(int(i)) for i in vector]
+    familiar = ' '.join(vector)
+    return data[familiar]
 
 if __name__ == "__main__":
-    build_index("knowledge.json")
-    # with open("knowledge.json", "r") as f:
-    #     data = f.read()
-    # if data:
-    #     knowledge = json.loads(data)
-    #     features = []
-    #     features_str = knowledge.keys()
-    #     for fea in features_str:
-    #         vector = fea.strip().split(' ')
-    #         vector = np.array(vector,dtype=np.float32)
-    #         print(vector)
+    # format(config.knowledge)
+    # build("buildtree_data.json")
+
+    fea = "0.0 10.9 2.0 0.00014007859346543068 9.0 505.162224388209 38.0 -62094900.0 0.0 0.0 -100.0 -1576541.0 15140.0 286394.0 2360.0 86134.0 152.0 76.0 1224.0 -17326.0"
+    fea = string2list(fea)
+    # print(fea)
+    f = get_familar(fea)
+    print(f)
+
 

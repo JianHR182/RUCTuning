@@ -1,0 +1,4 @@
+[2023-12-03 19:42:58,985:tuner.py#L77:INFO]: 1701603678	random 1	{'max_process_memory': 14228012, 'shared_buffers': 330273, 'maintenance_work_mem': 2909985, 'wal_buffers': 185427, 'temp_buffers': 893640988, 'backend_flush_after': 253, 'effective_cache_size': 1527792}	tps = 57865.02
+
+[2023-12-03 19:43:21,671:tuner.py#L113:INFO]: 1701603678	suggest 1	{'max_process_memory': 14733475, 'shared_buffers': 160703, 'maintenance_work_mem': 2537758, 'wal_buffers': 202998, 'temp_buffers': 191578832, 'backend_flush_after': 159, 'effective_cache_size': 442592}	tps = 61587.65
+

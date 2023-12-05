@@ -125,24 +125,24 @@ class WP2(WP):
         metrics = []
 
         # 输出分析信息到终端
-        print("type of workload :",workload_path)
+        # print("type of workload :",workload_path)
         # print("total token num :",len(token_list))
-        print("sample SQL1:",re.split(r'[,;\s\n\t\(\)]+',str(df.iloc[0].name)))
-        print("sample SQL2:",re.split(r'[,;\s\n\t\(\)]+',str(df.iloc[1].name)))
-        print("size of workload :",tokens.count(";"))
+        # print("sample SQL1:",re.split(r'[,;\s\n\t\(\)]+',str(df.iloc[0].name)))
+        # print("sample SQL2:",re.split(r'[,;\s\n\t\(\)]+',str(df.iloc[1].name)))
+        # print("size of workload :",tokens.count(";"))
         metrics.append(tokens.count(";"))
-        print("read write ratio : "+str(read_cnt)+"|"+str(write_cnt)+"  "+str(read_cnt/(write_cnt+read_cnt)))
+        # print("read write ratio : "+str(read_cnt)+"|"+str(write_cnt)+"  "+str(read_cnt/(write_cnt+read_cnt)))
         metrics.append(str(read_cnt/(write_cnt+read_cnt)))
-        print("group by ratio : "+str(group_by_num/(write_cnt+read_cnt)))
+        # print("group by ratio : "+str(group_by_num/(write_cnt+read_cnt)))
         metrics.append(str(group_by_num/(write_cnt+read_cnt)))
-        print("order by ratio : "+str(order_by_num/(write_cnt+read_cnt)))
+        # print("order by ratio : "+str(order_by_num/(write_cnt+read_cnt)))
         metrics.append(str(order_by_num/(write_cnt+read_cnt)))
-        print("aggregation ratio : "+str(aggr_num/(write_cnt+read_cnt)))
+        # print("aggregation ratio : "+str(aggr_num/(write_cnt+read_cnt)))
         metrics.append(str(aggr_num/(write_cnt+read_cnt)))
-        print("average predicate num per SQL :",str(predicate_num/(read_cnt+write_cnt)))
+        # print("average predicate num per SQL :",str(predicate_num/(read_cnt+write_cnt)))
         metrics.append(str(predicate_num/(read_cnt+write_cnt)))
-        print("max visited table :",maxi,str(maxv/sumv))
-        print("min visited table :",mini,str(minv/sumv))
+        # print("max visited table :",maxi,str(maxv/sumv))
+        # print("min visited table :",mini,str(minv/sumv))
         # access = np.array([str(tbl_dict[tb]/sumv) for tb in self.dbs.tables])
         # characteristic = np.concatenate((static , access))
         # for tb in self.dbs.tables:
@@ -159,7 +159,7 @@ class WP2(WP):
         #     for j in tbl_col_dict[i]:
         #         # print('\t',j)
         #         print("\t\t",j,str(tbl_col_dict[i][j])+"|"+str(tmp_sum),"\t",tbl_col_dict[i][j]/tmp_sum)
-        print()
+        # print()
         return [float(x) for x in metrics]
         
 import psqlparse

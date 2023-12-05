@@ -332,6 +332,7 @@ class Database:
             # 获取快照id
             cursor.execute("select * from snapshot.snapshot order by start_ts desc limit 5;")
             lines = cursor.fetchall()
+            # print(lines)
             snap_id = str(lines[0][0])
             cursor.close()
             conn.close()
@@ -837,3 +838,7 @@ class Database:
         cursor.close()
         conn.close()
         return [float(x) for x in target.values()]
+
+if __name__ == '__main__':
+    db = Database()
+    db.get_snapshot()

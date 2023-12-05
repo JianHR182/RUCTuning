@@ -118,7 +118,7 @@ def parseSQL2json2(create_table_sql):
                             one_column['Data Type Mod'] = [10, 0]
 
                     # 设置缺省值域
-                    if one_column["Data Type"] in ["varchar"]:
+                    if one_column["Data Type"] in ["varchar","text"]:
                         one_column["Data Distribution"] = [1, max(one_column["Data Type Mod"] - 2, 1)]
                     elif one_column["Data Type"] in ["bpchar"]:
                         one_column["Data Distribution"] = [one_column["Data Type Mod"], one_column["Data Type Mod"]]

@@ -211,6 +211,141 @@ WITH (orientation=row, compression=no);
 ALTER TABLE public.sbtest20 OWNER TO tianjikun;
 
 --
+-- Name: sbtest21; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest21 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest21 OWNER TO tianjikun;
+
+--
+-- Name: sbtest22; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest22 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest22 OWNER TO tianjikun;
+
+--
+-- Name: sbtest23; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest23 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest23 OWNER TO tianjikun;
+
+--
+-- Name: sbtest24; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest24 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest24 OWNER TO tianjikun;
+
+--
+-- Name: sbtest25; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest25 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest25 OWNER TO tianjikun;
+
+--
+-- Name: sbtest26; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest26 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest26 OWNER TO tianjikun;
+
+--
+-- Name: sbtest27; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest27 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest27 OWNER TO tianjikun;
+
+--
+-- Name: sbtest28; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest28 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest28 OWNER TO tianjikun;
+
+--
+-- Name: sbtest29; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest29 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest29 OWNER TO tianjikun;
+
+--
 -- Name: sbtest3; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
 --
 
@@ -224,6 +359,156 @@ WITH (orientation=row, compression=no);
 
 
 ALTER TABLE public.sbtest3 OWNER TO tianjikun;
+
+--
+-- Name: sbtest30; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest30 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest30 OWNER TO tianjikun;
+
+--
+-- Name: sbtest31; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest31 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest31 OWNER TO tianjikun;
+
+--
+-- Name: sbtest32; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest32 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest32 OWNER TO tianjikun;
+
+--
+-- Name: sbtest33; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest33 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest33 OWNER TO tianjikun;
+
+--
+-- Name: sbtest34; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest34 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest34 OWNER TO tianjikun;
+
+--
+-- Name: sbtest35; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest35 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest35 OWNER TO tianjikun;
+
+--
+-- Name: sbtest36; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest36 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest36 OWNER TO tianjikun;
+
+--
+-- Name: sbtest37; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest37 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest37 OWNER TO tianjikun;
+
+--
+-- Name: sbtest38; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest38 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest38 OWNER TO tianjikun;
+
+--
+-- Name: sbtest39; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest39 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest39 OWNER TO tianjikun;
 
 --
 -- Name: sbtest4; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
@@ -241,6 +526,156 @@ WITH (orientation=row, compression=no);
 ALTER TABLE public.sbtest4 OWNER TO tianjikun;
 
 --
+-- Name: sbtest40; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest40 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest40 OWNER TO tianjikun;
+
+--
+-- Name: sbtest41; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest41 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest41 OWNER TO tianjikun;
+
+--
+-- Name: sbtest42; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest42 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest42 OWNER TO tianjikun;
+
+--
+-- Name: sbtest43; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest43 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest43 OWNER TO tianjikun;
+
+--
+-- Name: sbtest44; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest44 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest44 OWNER TO tianjikun;
+
+--
+-- Name: sbtest45; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest45 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest45 OWNER TO tianjikun;
+
+--
+-- Name: sbtest46; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest46 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest46 OWNER TO tianjikun;
+
+--
+-- Name: sbtest47; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest47 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest47 OWNER TO tianjikun;
+
+--
+-- Name: sbtest48; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest48 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest48 OWNER TO tianjikun;
+
+--
+-- Name: sbtest49; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest49 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest49 OWNER TO tianjikun;
+
+--
 -- Name: sbtest5; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
 --
 
@@ -254,6 +689,21 @@ WITH (orientation=row, compression=no);
 
 
 ALTER TABLE public.sbtest5 OWNER TO tianjikun;
+
+--
+-- Name: sbtest50; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE TABLE sbtest50 (
+    id integer NOT NULL,
+    k integer DEFAULT 0 NOT NULL,
+    c character(120) DEFAULT NULL::bpchar NOT NULL,
+    pad character(60) DEFAULT NULL::bpchar NOT NULL
+)
+WITH (orientation=row, compression=no);
+
+
+ALTER TABLE public.sbtest50 OWNER TO tianjikun;
 
 --
 -- Name: sbtest6; Type: TABLE; Schema: public; Owner: tianjikun; Tablespace: 
@@ -568,6 +1018,195 @@ ALTER  SEQUENCE sbtest20_id_seq OWNED BY sbtest20.id;
 
 
 --
+-- Name: sbtest21_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest21_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest21_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest21_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest21_id_seq OWNED BY sbtest21.id;
+
+
+--
+-- Name: sbtest22_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest22_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest22_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest22_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest22_id_seq OWNED BY sbtest22.id;
+
+
+--
+-- Name: sbtest23_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest23_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest23_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest23_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest23_id_seq OWNED BY sbtest23.id;
+
+
+--
+-- Name: sbtest24_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest24_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest24_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest24_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest24_id_seq OWNED BY sbtest24.id;
+
+
+--
+-- Name: sbtest25_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest25_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest25_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest25_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest25_id_seq OWNED BY sbtest25.id;
+
+
+--
+-- Name: sbtest26_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest26_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest26_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest26_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest26_id_seq OWNED BY sbtest26.id;
+
+
+--
+-- Name: sbtest27_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest27_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest27_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest27_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest27_id_seq OWNED BY sbtest27.id;
+
+
+--
+-- Name: sbtest28_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest28_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest28_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest28_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest28_id_seq OWNED BY sbtest28.id;
+
+
+--
+-- Name: sbtest29_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest29_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest29_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest29_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest29_id_seq OWNED BY sbtest29.id;
+
+
+--
 -- Name: sbtest2_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
 --
 
@@ -586,6 +1225,216 @@ ALTER SEQUENCE public.sbtest2_id_seq OWNER TO tianjikun;
 --
 
 ALTER  SEQUENCE sbtest2_id_seq OWNED BY sbtest2.id;
+
+
+--
+-- Name: sbtest30_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest30_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest30_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest30_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest30_id_seq OWNED BY sbtest30.id;
+
+
+--
+-- Name: sbtest31_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest31_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest31_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest31_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest31_id_seq OWNED BY sbtest31.id;
+
+
+--
+-- Name: sbtest32_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest32_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest32_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest32_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest32_id_seq OWNED BY sbtest32.id;
+
+
+--
+-- Name: sbtest33_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest33_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest33_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest33_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest33_id_seq OWNED BY sbtest33.id;
+
+
+--
+-- Name: sbtest34_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest34_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest34_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest34_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest34_id_seq OWNED BY sbtest34.id;
+
+
+--
+-- Name: sbtest35_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest35_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest35_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest35_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest35_id_seq OWNED BY sbtest35.id;
+
+
+--
+-- Name: sbtest36_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest36_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest36_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest36_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest36_id_seq OWNED BY sbtest36.id;
+
+
+--
+-- Name: sbtest37_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest37_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest37_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest37_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest37_id_seq OWNED BY sbtest37.id;
+
+
+--
+-- Name: sbtest38_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest38_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest38_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest38_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest38_id_seq OWNED BY sbtest38.id;
+
+
+--
+-- Name: sbtest39_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest39_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest39_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest39_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest39_id_seq OWNED BY sbtest39.id;
 
 
 --
@@ -610,6 +1459,216 @@ ALTER  SEQUENCE sbtest3_id_seq OWNED BY sbtest3.id;
 
 
 --
+-- Name: sbtest40_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest40_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest40_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest40_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest40_id_seq OWNED BY sbtest40.id;
+
+
+--
+-- Name: sbtest41_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest41_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest41_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest41_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest41_id_seq OWNED BY sbtest41.id;
+
+
+--
+-- Name: sbtest42_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest42_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest42_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest42_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest42_id_seq OWNED BY sbtest42.id;
+
+
+--
+-- Name: sbtest43_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest43_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest43_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest43_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest43_id_seq OWNED BY sbtest43.id;
+
+
+--
+-- Name: sbtest44_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest44_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest44_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest44_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest44_id_seq OWNED BY sbtest44.id;
+
+
+--
+-- Name: sbtest45_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest45_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest45_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest45_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest45_id_seq OWNED BY sbtest45.id;
+
+
+--
+-- Name: sbtest46_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest46_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest46_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest46_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest46_id_seq OWNED BY sbtest46.id;
+
+
+--
+-- Name: sbtest47_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest47_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest47_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest47_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest47_id_seq OWNED BY sbtest47.id;
+
+
+--
+-- Name: sbtest48_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest48_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest48_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest48_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest48_id_seq OWNED BY sbtest48.id;
+
+
+--
+-- Name: sbtest49_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest49_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest49_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest49_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest49_id_seq OWNED BY sbtest49.id;
+
+
+--
 -- Name: sbtest4_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
 --
 
@@ -628,6 +1687,27 @@ ALTER SEQUENCE public.sbtest4_id_seq OWNER TO tianjikun;
 --
 
 ALTER  SEQUENCE sbtest4_id_seq OWNED BY sbtest4.id;
+
+
+--
+-- Name: sbtest50_id_seq; Type: SEQUENCE; Schema: public; Owner: tianjikun
+--
+
+CREATE  SEQUENCE sbtest50_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.sbtest50_id_seq OWNER TO tianjikun;
+
+--
+-- Name: sbtest50_id_seq; Type: LARGE SEQUENCE OWNED BY; Schema: public; Owner: tianjikun
+--
+
+ALTER  SEQUENCE sbtest50_id_seq OWNED BY sbtest50.id;
 
 
 --
@@ -830,7 +1910,140 @@ ALTER TABLE sbtest20 ALTER COLUMN id SET DEFAULT nextval('sbtest20_id_seq'::regc
 -- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
 --
 
+ALTER TABLE sbtest21 ALTER COLUMN id SET DEFAULT nextval('sbtest21_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest22 ALTER COLUMN id SET DEFAULT nextval('sbtest22_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest23 ALTER COLUMN id SET DEFAULT nextval('sbtest23_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest24 ALTER COLUMN id SET DEFAULT nextval('sbtest24_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest25 ALTER COLUMN id SET DEFAULT nextval('sbtest25_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest26 ALTER COLUMN id SET DEFAULT nextval('sbtest26_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest27 ALTER COLUMN id SET DEFAULT nextval('sbtest27_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest28 ALTER COLUMN id SET DEFAULT nextval('sbtest28_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest29 ALTER COLUMN id SET DEFAULT nextval('sbtest29_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
 ALTER TABLE sbtest3 ALTER COLUMN id SET DEFAULT nextval('sbtest3_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest30 ALTER COLUMN id SET DEFAULT nextval('sbtest30_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest31 ALTER COLUMN id SET DEFAULT nextval('sbtest31_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest32 ALTER COLUMN id SET DEFAULT nextval('sbtest32_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest33 ALTER COLUMN id SET DEFAULT nextval('sbtest33_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest34 ALTER COLUMN id SET DEFAULT nextval('sbtest34_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest35 ALTER COLUMN id SET DEFAULT nextval('sbtest35_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest36 ALTER COLUMN id SET DEFAULT nextval('sbtest36_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest37 ALTER COLUMN id SET DEFAULT nextval('sbtest37_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest38 ALTER COLUMN id SET DEFAULT nextval('sbtest38_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest39 ALTER COLUMN id SET DEFAULT nextval('sbtest39_id_seq'::regclass);
 
 
 --
@@ -844,7 +2057,84 @@ ALTER TABLE sbtest4 ALTER COLUMN id SET DEFAULT nextval('sbtest4_id_seq'::regcla
 -- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
 --
 
+ALTER TABLE sbtest40 ALTER COLUMN id SET DEFAULT nextval('sbtest40_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest41 ALTER COLUMN id SET DEFAULT nextval('sbtest41_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest42 ALTER COLUMN id SET DEFAULT nextval('sbtest42_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest43 ALTER COLUMN id SET DEFAULT nextval('sbtest43_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest44 ALTER COLUMN id SET DEFAULT nextval('sbtest44_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest45 ALTER COLUMN id SET DEFAULT nextval('sbtest45_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest46 ALTER COLUMN id SET DEFAULT nextval('sbtest46_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest47 ALTER COLUMN id SET DEFAULT nextval('sbtest47_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest48 ALTER COLUMN id SET DEFAULT nextval('sbtest48_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest49 ALTER COLUMN id SET DEFAULT nextval('sbtest49_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
 ALTER TABLE sbtest5 ALTER COLUMN id SET DEFAULT nextval('sbtest5_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: tianjikun
+--
+
+ALTER TABLE sbtest50 ALTER COLUMN id SET DEFAULT nextval('sbtest50_id_seq'::regclass);
 
 
 --
@@ -972,11 +2262,163 @@ ALTER TABLE sbtest20
 
 
 --
+-- Name: sbtest21_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest21
+    ADD CONSTRAINT sbtest21_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest22_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest22
+    ADD CONSTRAINT sbtest22_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest23_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest23
+    ADD CONSTRAINT sbtest23_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest24_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest24
+    ADD CONSTRAINT sbtest24_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest25_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest25
+    ADD CONSTRAINT sbtest25_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest26_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest26
+    ADD CONSTRAINT sbtest26_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest27_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest27
+    ADD CONSTRAINT sbtest27_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest28_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest28
+    ADD CONSTRAINT sbtest28_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest29_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest29
+    ADD CONSTRAINT sbtest29_pkey PRIMARY KEY  (id);
+
+
+--
 -- Name: sbtest2_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
 --
 
 ALTER TABLE sbtest2
     ADD CONSTRAINT sbtest2_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest30_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest30
+    ADD CONSTRAINT sbtest30_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest31_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest31
+    ADD CONSTRAINT sbtest31_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest32_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest32
+    ADD CONSTRAINT sbtest32_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest33_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest33
+    ADD CONSTRAINT sbtest33_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest34_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest34
+    ADD CONSTRAINT sbtest34_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest35_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest35
+    ADD CONSTRAINT sbtest35_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest36_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest36
+    ADD CONSTRAINT sbtest36_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest37_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest37
+    ADD CONSTRAINT sbtest37_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest38_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest38
+    ADD CONSTRAINT sbtest38_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest39_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest39
+    ADD CONSTRAINT sbtest39_pkey PRIMARY KEY  (id);
 
 
 --
@@ -988,11 +2430,99 @@ ALTER TABLE sbtest3
 
 
 --
+-- Name: sbtest40_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest40
+    ADD CONSTRAINT sbtest40_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest41_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest41
+    ADD CONSTRAINT sbtest41_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest42_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest42
+    ADD CONSTRAINT sbtest42_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest43_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest43
+    ADD CONSTRAINT sbtest43_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest44_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest44
+    ADD CONSTRAINT sbtest44_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest45_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest45
+    ADD CONSTRAINT sbtest45_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest46_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest46
+    ADD CONSTRAINT sbtest46_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest47_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest47
+    ADD CONSTRAINT sbtest47_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest48_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest48
+    ADD CONSTRAINT sbtest48_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest49_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest49
+    ADD CONSTRAINT sbtest49_pkey PRIMARY KEY  (id);
+
+
+--
 -- Name: sbtest4_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
 --
 
 ALTER TABLE sbtest4
     ADD CONSTRAINT sbtest4_pkey PRIMARY KEY  (id);
+
+
+--
+-- Name: sbtest50_pkey; Type: CONSTRAINT; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+ALTER TABLE sbtest50
+    ADD CONSTRAINT sbtest50_pkey PRIMARY KEY  (id);
 
 
 --
@@ -1127,10 +2657,143 @@ CREATE INDEX k_20 ON sbtest20 USING btree (k) TABLESPACE pg_default;
 
 
 --
+-- Name: k_21; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_21 ON sbtest21 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_22; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_22 ON sbtest22 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_23; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_23 ON sbtest23 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_24; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_24 ON sbtest24 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_25; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_25 ON sbtest25 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_26; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_26 ON sbtest26 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_27; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_27 ON sbtest27 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_28; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_28 ON sbtest28 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_29; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_29 ON sbtest29 USING btree (k) TABLESPACE pg_default;
+
+
+--
 -- Name: k_3; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
 --
 
 CREATE INDEX k_3 ON sbtest3 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_30; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_30 ON sbtest30 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_31; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_31 ON sbtest31 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_32; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_32 ON sbtest32 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_33; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_33 ON sbtest33 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_34; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_34 ON sbtest34 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_35; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_35 ON sbtest35 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_36; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_36 ON sbtest36 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_37; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_37 ON sbtest37 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_38; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_38 ON sbtest38 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_39; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_39 ON sbtest39 USING btree (k) TABLESPACE pg_default;
 
 
 --
@@ -1141,10 +2804,87 @@ CREATE INDEX k_4 ON sbtest4 USING btree (k) TABLESPACE pg_default;
 
 
 --
+-- Name: k_40; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_40 ON sbtest40 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_41; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_41 ON sbtest41 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_42; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_42 ON sbtest42 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_43; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_43 ON sbtest43 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_44; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_44 ON sbtest44 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_45; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_45 ON sbtest45 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_46; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_46 ON sbtest46 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_47; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_47 ON sbtest47 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_48; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_48 ON sbtest48 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_49; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_49 ON sbtest49 USING btree (k) TABLESPACE pg_default;
+
+
+--
 -- Name: k_5; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
 --
 
 CREATE INDEX k_5 ON sbtest5 USING btree (k) TABLESPACE pg_default;
+
+
+--
+-- Name: k_50; Type: INDEX; Schema: public; Owner: tianjikun; Tablespace: 
+--
+
+CREATE INDEX k_50 ON sbtest50 USING btree (k) TABLESPACE pg_default;
 
 
 --

@@ -1,0 +1,2 @@
+{"max_process_memory": 14476529, "shared_buffers": 292906, "maintenance_work_mem": 11033225, "wal_buffers": 73951, "temp_buffers": 254187296, "backend_flush_after": 41, "effective_cache_size": 11739347, "tps": 46264.57}
+{"maintenance_work_mem": 16384, "temp_buffers": 128, "backend_flush_after": 0, "effective_cache_size": 16384, "tps": 61124.41}
