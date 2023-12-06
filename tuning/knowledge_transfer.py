@@ -8,7 +8,7 @@ from SuperWG.DWG.jsonHelper.jsonHelper import parseSQL2json2
 from annoy import AnnoyIndex
 import os
 
-threshold = 0
+threshold = 500
 step = 1
 
 def get_train_feature(db, begin, end):
@@ -225,6 +225,7 @@ def update_knowledge(feature, id, knowledge_path):
     else:
         with open(knowledge_path, "r") as k:
             knowledge = json.load(k)
+        # 设定建立二叉树的最小知识库大小以及步长
         if len(knowledge) >= threshold and len(knowledge) % step == 0:
             build_index(knowledge_path)
     key = ''
@@ -266,7 +267,7 @@ def mapping(feature, knowledge_path):
             keys.append(np.array(string2list(k)))
         keys = np.array(keys)
 
-        # 判断知识库大于1000条
+        # 判断知识库大于最小阈值
         if len(knowledge_dict) >= threshold:
             isann = False
             current_directory = os.path.dirname(os.path.abspath(__file__))
